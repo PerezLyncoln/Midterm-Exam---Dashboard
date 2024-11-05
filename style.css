@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    display: flex;
+    background-color: #F4F6FF;
+}
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 110px;
+    padding: 0 1.8rem;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #F3C623;
+}
+.sidebar:hover {
+    width: 400px;
+    transition: 0.5s ease-in-out;
+}
+.logo {
+    height: 80px;
+    margin: 15px;
+}
+
+.menu {
+    white-space: nowrap;
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding: 0.5rem;
+    margin: 8px 0;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover {
+    background: #F4F6FF;
+    transition: all 0.5s linear;
+}
+.menu a:hover {
+    color: #F3C623;
+}
+.menu a {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a i {
+    font-size: 30px;
+}
+.settings {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*///// Header Title /////*/
+.main--content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    color: #F3C623;
+}
+.main--content img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: white;
+    padding: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.user--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+a.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #F3C623;
+    gap: 5px;
+}
+a.search-bar input {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F4F6FF;
+}
+.fa-magnifying-glass {
+    font-size: 30px;
+}
+.fa-angle-down {
+    font-size: 20px;
+}
+
+/*///// Second Layer /////*/
+.second--layer {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(128, 127, 127);
+}
+/*/// Upload ///*/
+.upload-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+    width: 400px;
+}
+.upload-wrapper a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload-wrapper a i {
+    font-size: 50px;
+}
+
+/*/// Profile Description ///*/
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+}
+.profile-info img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.profile-sub-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}   
