@@ -1,5 +1,5 @@
 // Fetching mock data from a JSON file
-fetch('Data/MOCK_DATA.json')
+fetch('MOCK_DATAtest.json')
     .then(response => response.json())
     .then(data => {
         // Extracting and counting genders

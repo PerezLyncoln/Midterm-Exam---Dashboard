@@ -89,6 +89,9 @@ body {
     width: 50px;
     border-radius: 50%;
 }
+.main--content div.header--wrapper, div.second--layer, div.third--layer {
+    box-shadow: 0 0 10px #dbdbdb;
+}
 .header--wrapper {
     display: flex;
     justify-content: space-between;
@@ -143,7 +146,7 @@ form.search-bar input {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
     gap: 8px;
     border-radius: 10px;
     background-color: white;
@@ -202,7 +205,7 @@ form.search-bar input {
     gap: 20px;
 }
 
-/*/// Trending Art Genres///*/
+/*/// Trending Art Genres ///*/
 div.trending-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -225,7 +228,7 @@ div.trending-genre {
 .third--layer {
     flex-grow: 1;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     overflow: hidden;
     background-color: grey;
 }
