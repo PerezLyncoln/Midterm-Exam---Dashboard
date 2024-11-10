@@ -19,14 +19,14 @@ body {
     bottom: 0;
     left: 0;
     height: 100vh;
-    width: 110px;
-    padding: 0 1.8rem;
+    width: 160px;
+    padding: 0 3rem;
     overflow: hidden;
     transition: all 0.5s linear;
     background: #F3C623;
 }
 .sidebar:hover {
-    width: 400px;
+    width: 600px;
     transition: 0.5s ease-in-out;
 }
 .logo {
@@ -36,7 +36,7 @@ body {
 
 .menu {
     white-space: nowrap;
-    height: 88%;
+    height: 85%;
     position: relative;
     list-style: none;
     padding: 0;
@@ -55,25 +55,35 @@ body {
     color: #F3C623;
 }
 .menu a {
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
     display: flex;
     color: white;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 .menu a span {
     overflow: hidden;
 }
 .menu a i {
-    font-size: 30px;
+    font-size: 40px;
 }
-.settings {
+/* a.space-gap {
+    display: flex;
+    justify-content: space-between;
+} */
+.sidebar-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+/* .settings {
     position: absolute;
     bottom: 0px;
     width: 100%;
-}
+} */
 
 /*///// Header Title /////*/
 .main--content {
@@ -89,8 +99,8 @@ body {
     width: 50px;
     border-radius: 50%;
 }
-.main--content div.header--wrapper, div.second--layer, div.third--layer {
-    box-shadow: 0 0 10px #dbdbdb;
+.box-shadow-div {
+    box-shadow: 0 0 8px #e4e4e4;
 }
 .header--wrapper {
     display: flex;
@@ -102,10 +112,27 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+.header--wrapper span{
+    font-size: 18px;
+}
+.header--wrapper h2{
+    font-size: 35px;
+}
+.header--wrapper img {
+    height: 60px;
+    width: 60px;
+}
 .user--wrapper {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-right: 20px;
+}
+.user--info span{
+    font-size: 23px;
+}
+.user--info h4{
+    font-size: 20px;
 }
 form.search-bar, .search-bar a{
     display: flex;
@@ -114,7 +141,7 @@ form.search-bar, .search-bar a{
     align-items: center;
     text-decoration: none;
     color: #F3C623;
-    gap: 5px;
+    gap: 10px;
 }
 form.search-bar input {
     padding: 10px 20px;
@@ -122,10 +149,10 @@ form.search-bar input {
     background-color: #F4F6FF;
 }
 .fa-magnifying-glass {
-    font-size: 30px;
+    font-size: 40px;
 }
 .fa-angle-down {
-    font-size: 25px;
+    font-size: 30px;
     color: #F3C623  ;
 }
 
@@ -137,7 +164,7 @@ form.search-bar input {
     gap: 30px;
     width: 100%;
     border-radius: 10px;
-    background: rgb(128, 127, 127);
+    /* background: rgb(128, 127, 127); */
 }
 /*/// Upload ///*/
 .quick-settings-wrapper {
@@ -161,6 +188,13 @@ form.search-bar input {
     border-radius: 10px;
     width: 45%;
 }
+.quick-settings-wrapper div:hover {
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.quick-settings-wrapper div span {
+    text-align: center;
+}
 .quick-settings-wrapper div a{
     display: flex;
     flex-direction: column;
@@ -174,6 +208,7 @@ form.search-bar input {
 }
 .quick-settings-wrapper div a span {
     white-space: nowrap;
+    font-size: 20px;
 }
 .quick-settings-wrapper div:hover, .quick-settings-wrapper a:hover {
     transition: all 0.3s ease-in-out;
@@ -181,7 +216,7 @@ form.search-bar input {
     background-color: #F3C623;
 }
 .quick-settings-wrapper div i {
-    font-size: 50px;
+    font-size: 60px;
 }
 /*/// Profile Description ///*/
 .profile-info {
@@ -195,25 +230,42 @@ form.search-bar input {
     border-radius: 10px;
 }
 .profile-info img {
+    box-shadow: 0 0 20px hsl(0, 0%, 72%);
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
+.profile-info span {
+    text-align: center;
+}
+.profile-name {
+    font-size: 25px;
+}
+.profile-bio {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
 .profile-sub-info {
     display: flex;
     justify-content: center;
+    font-size: 18px;
     gap: 20px;
 }
-
+.orange {
+    color: #fdad19;
+}
+.deep-orange {
+    color: #c78915;
+}
 /*/// Trending Art Genres ///*/
 div.trending-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80%;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
 }
 div.trending-genre {
     width:50%;
@@ -223,6 +275,40 @@ div.trending-genre {
     align-items: center;
     padding: 5px;
 }
+div.trending-genre div {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+div.trending-genre a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #F3C623;
+    text-align: center;
+}
+div.trending-genre a:hover {
+    transition: 0.5s;
+    transform: translateY(-3px);
+    background-color: #F3C623;
+    color: white;
+    box-shadow: 0 0 10px #e4e4e4;
+}
+.trending-genre a span, i {
+    font-size: 20px;
+}
+.fire-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
 
 /*///// Third Layer /////*/
 .third--layer {
@@ -230,7 +316,7 @@ div.trending-genre {
     display: flex;
     gap: 30px;
     overflow: hidden;
-    background-color: grey;
+    /* background-color: grey; */
 }
 .statistics1-wrapper {
     background: white;
@@ -247,9 +333,28 @@ div.trending-genre {
 .stat1-content, .stat2-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-content: center;
+    gap: 30px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
 }
+.top {
+    position: relative;
+    top: 0;
+}
+.chart-title-size {
+    position: relative;
+    top: 2px;
+    font-size: 50px;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffb81d;
+    }
+    to {
+      text-shadow: 0 0 10px #ffffff, 0 0 10px #ffb81d;
+    }
+  }
