@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const durations = labels.map(month => monthDurationMap[month]);
 
             // Creating a chart with Chart.js
-            const ctx = document.getElementById('myChart2').getContext('2d');
+            const ctx = document.getElementById('page_views').getContext('2d');
             new Chart(ctx, {
                 type: 'bar',
                 data: {
