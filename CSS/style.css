@@ -360,6 +360,30 @@ div.trending-genre a:hover {
   }
 
 @media (max-width: 1200px) {
+    .logo {
+        height: 20px;
+    }
+    div.sidebar {
+        width: 120px;
+        padding: 0 2.2rem;
+    }
+    div.sidebar:hover {
+        width: 500px;
+    }
+    div.sidebar-bottom {
+        position: relative;
+        bottom: 0;
+    }
+    .menu li {
+        height: 10%;
+    }
+    .menu a, .menu a i {
+        font-size: 30px;
+    }
+    .menu li a span {
+        flex-wrap: wrap;
+    }
+    /* ----------------------- */
     .second--layer {
         flex-direction: column;
     }
@@ -374,8 +398,29 @@ div.trending-genre a:hover {
     .profile-info {
         width: 100%;
     }
+    .profile-info span.profile-name {
+        font-size: 30px;
+    }
+    .profile-info span.profile-bio {
+        font-size: 18px;
+    }
+    .profile-sub-info span {
+        font-size: 23px;
+    }
+    .profile-info 
     /* ----------------------- */
     div.trending-wrapper {
         width: 100%;
+        flex-direction: column;
+    }
+    div.trending-wrapper div.trending-genre{
+        width: 100%;
+    }
+    div.trending-genre a span, div.trending-genre a span div i {
+        font-size: 30px;
+    }
+    /* ----------------------- */
+    div.third--layer {
+        flex-direction: column;
     }
 }
