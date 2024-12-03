@@ -359,7 +359,7 @@ div.trending-genre a:hover {
     }
   }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .logo {
         height: 20px;
     }
@@ -407,7 +407,6 @@ div.trending-genre a:hover {
     .profile-sub-info span {
         font-size: 23px;
     }
-    .profile-info 
     /* ----------------------- */
     div.trending-wrapper {
         width: 100%;
@@ -416,7 +415,7 @@ div.trending-genre a:hover {
     div.trending-wrapper div.trending-genre{
         width: 100%;
     }
-    div.trending-genre a span, div.trending-genre a span div i {
+    div.trending-genre a span, div.trending-genre a span i {
         font-size: 30px;
     }
     /* ----------------------- */
