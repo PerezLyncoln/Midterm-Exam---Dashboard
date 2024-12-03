@@ -358,3 +358,24 @@ div.trending-genre a:hover {
       text-shadow: 0 0 10px #ffffff, 0 0 10px #ffb81d;
     }
   }
+
+@media (max-width: 1200px) {
+    .second--layer {
+        flex-direction: column;
+    }
+    .quick-settings-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    .quick-settings-wrapper div {
+        width: 100%;
+    }
+    /* ----------------------- */
+    .profile-info {
+        width: 100%;
+    }
+    /* ----------------------- */
+    div.trending-wrapper {
+        width: 100%;
+    }
+}
